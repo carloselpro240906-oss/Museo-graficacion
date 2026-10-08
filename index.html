@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Museo Web de la evolución de la graficación por computadora." />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Museo de la Evolución Gráfica · Carlos González</title>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header>
+  <nav aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a><a href="#evolucion">Cinco momentos</a><a href="#aplicacion">Aplicación</a>
+    <a href="#laboratorio">Experimentos</a><a href="#algoritmo">Algoritmo</a><a href="#glosario">Glosario</a><a href="#cierre">Cierre</a>
+  </nav>
+</header>
+<main id="contenido">
+<section id="inicio" class="hero">
+  <p class="eyebrow">MUSEO WEB · EVOLUCIÓN GRÁFICA</p>
+  <h1>De dibujar puntos a simular luz.</h1>
+  <p class="lead">Una breve historia de cómo la computadora pasó de representar formas simples a producir imágenes interactivas, tridimensionales y cada vez más cercanas a la realidad.</p>
+  <div class="hero-meta"><span>Autor: <strong>Carlos González</strong></span><span>Grupo: <strong>________</strong></span></div>
+  <div class="definition"><strong>Mi definición de graficación:</strong> es el proceso de convertir datos y reglas matemáticas en imágenes que una persona pueda interpretar, manipular o usar para tomar decisiones.</div>
+</section>
+
+<section id="evolucion">
+  <p class="eyebrow">01 · RECORRIDO</p><h2>Cinco momentos que cambiaron la imagen digital</h2>
+  <p class="section-intro">Cada momento responde a la misma pregunta: ¿qué era difícil antes, qué cambió y qué podemos hacer hoy gracias a ese cambio?</p>
+  <div class="timeline">
+    <article class="moment"><div class="date">1963</div><div class="moment-copy"><h3>01 · Sketchpad: dibujar directamente en la computadora</h3><p><strong>Limitación anterior:</strong> la interacción con computadoras dependía principalmente de instrucciones escritas y dispositivos poco adecuados para dibujar.</p><p><strong>Cambio:</strong> Ivan Sutherland creó Sketchpad en el MIT: permitía dibujar y manipular figuras geométricas en tiempo real con un lápiz óptico.</p><p><strong>Impacto:</strong> la pantalla dejó de ser solo una salida y se convirtió en un espacio interactivo. El sistema influyó en el CAD y en las interfaces gráficas posteriores.</p><p><strong>Ejemplo actual:</strong> programas CAD y editores gráficos permiten seleccionar, mover, copiar y transformar objetos directamente.</p><figure><img src="./assets/sketchpad.svg" width="1200" height="650" alt="Ilustración propia de una pantalla inspirada en Sketchpad con figuras geométricas y lápiz óptico"><figcaption>Imagen: elaboración propia basada en la documentación histórica de Sketchpad. Fuente documental: Computer History Museum y tesis de Ivan Sutherland.</figcaption></figure></div></article>
+    <article class="moment"><div class="date">1983</div><div class="moment-copy"><h3>02 · GUI: la computadora se vuelve visual</h3><p><strong>Limitación anterior:</strong> para muchas tareas era necesario memorizar comandos o trabajar con interfaces textuales.</p><p><strong>Cambio:</strong> Apple Lisa llevó al mercado una computadora personal con interfaz gráfica y mouse, inspirada en trabajos previos de Xerox PARC.</p><p><strong>Impacto:</strong> ventanas, iconos, menús y puntero hicieron que acciones abstractas pudieran representarse visualmente.</p><p><strong>Ejemplo actual:</strong> Windows, macOS, Android y las aplicaciones web siguen usando la idea de manipular objetos visuales.</p><figure><img src="./assets/lisa.svg" width="1200" height="650" alt="Ilustración propia de una interfaz gráfica con ventanas, iconos y puntero"><figcaption>Imagen: elaboración propia. Fuente documental: Computer History Museum, historia de Apple Lisa.</figcaption></figure></div></article>
+    <article class="moment"><div class="date">1974–75</div><div class="moment-copy"><h3>03 · El modelo 3D: objetos como datos</h3><p><strong>Limitación anterior:</strong> una figura plana no describía bien volumen, profundidad, superficies o iluminación.</p><p><strong>Cambio:</strong> Martin Newell creó un conjunto de coordenadas para representar una tetera y los investigadores de Utah la convirtieron en un modelo 3D de alambre.</p><p><strong>Impacto:</strong> un objeto real pudo convertirse en datos matemáticos y después recibir superficies, color, luz y sombras.</p><p><strong>Ejemplo actual:</strong> videojuegos, animación, CAD, impresión 3D y visualización científica trabajan con modelos tridimensionales.</p><figure><img src="./assets/teapot.svg" width="1200" height="650" alt="Ilustración propia de una tetera representada como malla tridimensional"><figcaption>Imagen: elaboración propia basada en el modelo Utah Teapot. Fuente documental: Computer History Museum.</figcaption></figure></div></article>
+    <article class="moment"><div class="date">1999</div><div class="moment-copy"><h3>04 · GPU: el procesamiento gráfico se especializa</h3><p><strong>Limitación anterior:</strong> la CPU tenía que cargar con muchas operaciones gráficas, lo que limitaba la cantidad de cálculos que podían hacerse en tiempo real.</p><p><strong>Cambio:</strong> NVIDIA presentó GeForce 256 y popularizó el concepto de GPU como procesador dedicado al trabajo gráfico, incluyendo transformación e iluminación por hardware.</p><p><strong>Impacto:</strong> separar y acelerar el procesamiento gráfico permitió escenas más complejas y preparó el camino para los shaders programables y el 3D moderno.</p><p><strong>Ejemplo actual:</strong> una GPU procesa simultáneamente enormes cantidades de vértices, píxeles y efectos en juegos y aplicaciones visuales.</p><figure><img src="./assets/geforce.svg" width="1200" height="650" alt="Ilustración propia de un chip gráfico y una escena 3D procesada"><figcaption>Imagen: elaboración propia. Fuente documental: NVIDIA y Computer History Museum.</figcaption></figure></div></article>
+    <article class="moment"><div class="date">2018 → hoy</div><div class="moment-copy"><h3>05 · Ray tracing en tiempo real</h3><p><strong>Limitación anterior:</strong> la iluminación realista basada en el comportamiento de la luz era demasiado costosa para ejecutarse en tiempo real en juegos convencionales.</p><p><strong>Cambio:</strong> la arquitectura NVIDIA Turing introdujo hardware dedicado para acelerar ray tracing en tiempo real.</p><p><strong>Impacto:</strong> sombras, reflejos, refracciones e iluminación global pueden calcularse durante una experiencia interactiva, acercando el renderizado en tiempo real a resultados cinematográficos.</p><p><strong>Ejemplo actual:</strong> videojuegos y aplicaciones 3D pueden combinar rasterización, ray tracing e inteligencia artificial para equilibrar calidad y rendimiento.</p><figure><img src="./assets/raytracing.svg" width="1200" height="650" alt="Ilustración propia de rayos de luz rebotando en una esfera dentro de una escena 3D"><figcaption>Imagen: elaboración propia. Fuente documental: NVIDIA, Turing y RTX; concepto de ray tracing documentado en Wikimedia Commons.</figcaption></figure></div></article>
+  </div>
+</section>
+
+<section id="aplicacion">
+  <p class="eyebrow">02 · APLICACIÓN REAL</p><h2>Una imagen puede convertirse en una decisión</h2>
+  <div class="flow">
+    <div><span>01</span><h3>Usuario</h3><p>Un médico o radiólogo.</p></div><div><span>02</span><h3>Problema</h3><p>Necesita entender una estructura que no puede observar directamente.</p></div><div><span>03</span><h3>Datos</h3><p>Mediciones de una tomografía: muchos valores asociados a posiciones dentro del cuerpo.</p></div><div><span>04</span><h3>Representación</h3><p>Los datos se convierten en cortes 2D y, mediante procesamiento, en visualizaciones 3D.</p></div><div><span>05</span><h3>Decisión</h3><p>La representación ayuda a localizar, medir y comunicar una estructura para apoyar el diagnóstico o la planificación.</p></div>
+  </div>
+  <p class="note"><strong>Idea clave:</strong> la graficación no es solamente “hacer algo bonito”. Su valor aparece cuando una representación hace visible una relación que sería difícil detectar en los datos originales.</p>
+</section>
+
+<section id="laboratorio">
+  <p class="eyebrow">03 · LABORATORIO</p><h2>Tres experimentos de color</h2>
+  <p class="section-intro">En los tres casos parto de una predicción y después la comparo con los valores calculados. RGB usa luz; CMY puede verse como la versión sustractiva complementaria; HSV y HSL reorganizan el mismo color en términos más cercanos a tono, saturación y brillo/luminosidad.</p>
+  <div class="experiments">
+    <article class="experiment"><h3>Experimento 1 · Rojo puro</h3><div class="swatch red"></div><p><strong>Predicción:</strong> espero un tono de 0°, saturación máxima y valor máximo porque solo está encendido el canal rojo.</p><p><strong>RGB:</strong> (255, 0, 0) · <strong>CMY:</strong> (0%, 100%, 100%).</p><p><strong>Máximo:</strong> 255 · <strong>Mínimo:</strong> 0 · <strong>Delta:</strong> 255.</p><p><strong>HSV:</strong> H=0°, S=100%, V=100%.</p><p><strong>HSL:</strong> H=0°, S=100%, L=50%.</p><p><strong>Conclusión:</strong> la predicción se cumple. Un delta grande indica que los canales no son iguales y existe una diferencia cromática clara.</p></article>
+    <article class="experiment"><h3>Experimento 2 · Gris</h3><div class="swatch gray"></div><p><strong>Predicción:</strong> espero saturación cero y ningún tono dominante porque los tres canales RGB son iguales.</p><p><strong>RGB:</strong> (128, 128, 128) · <strong>CMY:</strong> (49.8%, 49.8%, 49.8%).</p><p><strong>Máximo:</strong> 128 · <strong>Mínimo:</strong> 128 · <strong>Delta:</strong> 0.</p><p><strong>HSV:</strong> H=0° (convención), S=0%, V=50.2%.</p><p><strong>HSL:</strong> H=0° (convención), S=0%, L=50.2%.</p><p><strong>Conclusión:</strong> la predicción se cumple. Delta=0 significa que no existe diferencia entre canales; por eso el color es acromático y el tono realmente no está definido.</p></article>
+    <article class="experiment"><h3>Experimento 3 · Azul verdoso</h3><div class="swatch teal"></div><p><strong>Predicción:</strong> espero un tono entre verde y azul, saturación alta y un valor medio-alto.</p><p><strong>RGB:</strong> (30, 150, 180) · <strong>CMY:</strong> (88.2%, 41.2%, 29.4%).</p><p><strong>Máximo:</strong> 180 · <strong>Mínimo:</strong> 30 · <strong>Delta:</strong> 150.</p><p><strong>HSV:</strong> H=192°, S=83.3%, V=70.6%.</p><p><strong>HSL:</strong> H=192°, S=71.4%, L=41.2%.</p><p><strong>Conclusión:</strong> la predicción se cumple. El azul es el canal dominante y el rojo el menor; el delta alto explica la saturación del color.</p></article>
+  </div>
+  <div class="calculator"><h3>Mini prueba interactiva · RGB → HSV</h3><p>Modifica los canales y comprueba cómo cambian máximo, mínimo, delta, H, S y V.</p><div class="inputs"><label>R <input id="r" type="number" min="0" max="255" value="30"></label><label>G <input id="g" type="number" min="0" max="255" value="150"></label><label>B <input id="b" type="number" min="0" max="255" value="180"></label></div><div id="result" class="result" aria-live="polite"></div></div>
+</section>
+
+<section id="algoritmo">
+  <p class="eyebrow">04 · DEL CÁLCULO AL CÓDIGO</p><h2>Algoritmo RGB → HSV</h2>
+  <p>Primero normalizo cada canal dividiendo entre 255. Después encuentro el máximo, el mínimo y su diferencia: <strong>delta = máximo − mínimo</strong>. El tono depende del canal máximo; la saturación depende de cuánto se separan máximo y mínimo; el valor es simplemente el máximo.</p>
+  <pre><code>función RGB_a_HSV(R, G, B)
+    r ← R / 255
+    g ← G / 255
+    b ← B / 255
+
+    máximo ← max(r, g, b)
+    mínimo ← min(r, g, b)
+    delta ← máximo - mínimo
+
+    si delta = 0 entonces
+        H ← 0
+        S ← 0
+    si no
+        si máximo = r entonces
+            H ← 60 × ((g - b) / delta)
+            si H &lt; 0 entonces H ← H + 360
+        si máximo = g entonces
+            H ← 60 × (((b - r) / delta) + 2)
+        si máximo = b entonces
+            H ← 60 × (((r - g) / delta) + 4)
+        S ← delta / máximo
+
+    V ← máximo
+    devolver H, S × 100, V × 100
+fin función</code></pre>
+  <div class="two-cols"><div><h3>¿Por qué delta = 0?</h3><p>Si delta vale cero, máximo y mínimo son iguales. Eso solo ocurre cuando <em>R = G = B</em>. No existe un canal dominante, así que no hay una dirección concreta en la rueda de color: el píxel es gris, negro o blanco. Por eso la saturación es 0% y el tono se suele guardar como 0° por convención, aunque conceptualmente está indefinido.</p></div><div><h3>Función</h3><p>La función recibe tres números RGB entre 0 y 255 y devuelve tres valores HSV. Separar el cálculo en una función permite probar muchos colores sin repetir la fórmula y hace explícita la relación entre datos de entrada y representación.</p></div></div>
+</section>
+
+<section id="glosario">
+  <p class="eyebrow">05 · VOCABULARIO</p><h2>Glosario en palabras propias</h2>
+  <div class="glossary">
+    <div><dt>Pixel</dt><dd>La unidad pequeña que forma una imagen digital. <em>Ejemplo:</em> un punto rojo de una fotografía.</dd></div>
+    <div><dt>RGB</dt><dd>Modelo que construye colores mezclando cantidades de rojo, verde y azul. <em>Ejemplo:</em> (255,0,0) es rojo.</dd></div>
+    <div><dt>CMY</dt><dd>Modelo sustractivo basado en cian, magenta y amarillo. <em>Ejemplo:</em> una impresora puede usar tintas relacionadas con estos tres componentes.</dd></div>
+    <div><dt>HSV</dt><dd>Forma de describir un color mediante tono, saturación y valor. <em>Ejemplo:</em> sirve para pensar “azul, muy saturado, brillante”.</dd></div>
+    <div><dt>HSL</dt><dd>Modelo que usa tono, saturación y luminosidad. <em>Ejemplo:</em> permite cambiar la luminosidad de un color sin cambiar su tono.</dd></div>
+    <div><dt>Delta</dt><dd>Diferencia entre el canal RGB mayor y el menor. <em>Ejemplo:</em> en (30,150,180), delta=150.</dd></div>
+    <div><dt>Renderizado</dt><dd>Proceso de calcular una imagen a partir de una escena, modelo y reglas. <em>Ejemplo:</em> generar el fotograma de un videojuego.</dd></div>
+    <div><dt>Rasterización</dt><dd>Conversión de geometría en fragmentos/píxeles que pueden terminar formando la imagen. <em>Ejemplo:</em> dibujar un triángulo 3D en la pantalla.</dd></div>
+    <div><dt>GPU</dt><dd>Procesador especializado en operaciones gráficas y paralelas. <em>Ejemplo:</em> una GPU puede procesar muchos píxeles al mismo tiempo.</dd></div>
+    <div><dt>Ray tracing</dt><dd>Técnica que simula trayectorias de luz para calcular iluminación y reflejos. <em>Ejemplo:</em> un reflejo en tiempo real sobre una superficie metálica.</dd></div>
+    <div><dt>Modelo 3D</dt><dd>Descripción matemática de la forma de un objeto en tres dimensiones. <em>Ejemplo:</em> una malla de vértices, aristas y caras.</dd></div>
+    <div><dt>Shader</dt><dd>Programa pequeño que controla parte del cálculo visual de una escena. <em>Ejemplo:</em> un shader puede decidir cómo se ve la superficie de un objeto.</dd></div>
+  </div>
+</section>
+
+<section id="cierre" class="closing">
+  <p class="eyebrow">06 · CIERRE</p><h2>La idea que cambió durante el recorrido</h2>
+  <p class="big-quote">“Al principio pensaba que la graficación era principalmente dibujar imágenes en una computadora. La evidencia me hizo verla como una forma de transformar datos y reglas en representaciones útiles.”</p>
+  <p>Sketchpad mostró que una computadora podía ser un medio interactivo para construir formas; el modelo Utah Teapot mostró que un objeto podía convertirse en datos; la GPU mostró que el hardware podía especializarse para acelerar esos cálculos; y el ray tracing mostró hasta dónde puede llegar la simulación visual cuando el hardware y los algoritmos avanzan juntos.</p>
+  <h3>Fuentes principales</h3>
+  <ol class="sources">
+    <li>Computer History Museum — <em>Timeline of Computer History: 1963</em>. https://www.computerhistory.org/timeline/1963/</li>
+    <li>Ivan Sutherland — <em>Sketchpad: A Man-Machine Graphical Communication System</em>, MIT, 1963. https://archive.computerhistory.org/resources/access/text/2017/03/102726907-05-01-acc.pdf</li>
+    <li>Computer History Museum — <em>1983: Apple Lisa</em>. https://www.computerhistory.org/timeline/1983/</li>
+    <li>Computer History Museum — <em>The Utah Teapot</em>. https://www.computerhistory.org/revolution/computer-graphics-music-and-art/15/206/</li>
+    <li>NVIDIA — <em>Historia de NVIDIA: 1999, NVIDIA inventa la GPU</em>. https://www.nvidia.com/es-la/about-nvidia/corporate-timeline/</li>
+    <li>NVIDIA — <em>NVIDIA Turing: Ray Tracing en tiempo real</em>. https://www.nvidia.com/es-la/geforce/turing/</li>
+    <li>Adobe — <em>Modelos de color y espacios de color</em>. https://helpx.adobe.com/mx/creative-cloud/apps/colors/understand-color-modes.html</li>
+    <li>Wikimedia Commons — referencias visuales de Sketchpad, Utah Teapot y ray tracing. https://commons.wikimedia.org/</li>
+  </ol>
+  <p class="credits"><strong>Créditos:</strong> texto, selección de evidencias, cálculos y diagramas locales elaborados para este museo. Las fuentes externas se consultaron el 8 de octubre de 2026.</p>
+</section>
+</main>
+<footer><p>Museo Web de la Evolución Gráfica · Carlos González · Grupo ______</p></footer>
+<script>
+function rgbToHsv(r, g, b) {
+  r /= 255; g /= 255; b /= 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b), delta = max - min;
+  let h = 0, s = 0;
+  if (delta !== 0) {
+    if (max === r) h = 60 * (((g - b) / delta) % 6);
+    else if (max === g) h = 60 * (((b - r) / delta) + 2);
+    else h = 60 * (((r - g) / delta) + 4);
+    if (h < 0) h += 360;
+    s = delta / max;
+  }
+  return {h, s: s * 100, v: max * 100, max: max * 255, min: min * 255, delta: delta * 255};
+}
+function updateColor() {
+  const r = Math.min(255, Math.max(0, Number(document.getElementById('r').value) || 0));
+  const g = Math.min(255, Math.max(0, Number(document.getElementById('g').value) || 0));
+  const b = Math.min(255, Math.max(0, Number(document.getElementById('b').value) || 0));
+  const x = rgbToHsv(r,g,b);
+  const box = document.getElementById('result');
+  box.innerHTML = `<div class="live-swatch" style="background:rgb(${r},${g},${b})"></div><div><strong>RGB:</strong> (${r}, ${g}, ${b}) · <strong>máx:</strong> ${x.max.toFixed(0)} · <strong>mín:</strong> ${x.min.toFixed(0)} · <strong>delta:</strong> ${x.delta.toFixed(0)}<br><strong>HSV:</strong> H=${x.h.toFixed(1)}° · S=${x.s.toFixed(1)}% · V=${x.v.toFixed(1)}%</div>`;
+}
+['r','g','b'].forEach(id => document.getElementById(id).addEventListener('input', updateColor));
+updateColor();
+</script>
+</body>
+</html>
